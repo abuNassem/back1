@@ -7,9 +7,7 @@ require('../db/db')
 const Router = require('../router/router')
 
 const app=express()
-app.use(cors({
-  origin: ["https://your-frontend.onrender.com"]
-}));
+app.use(cors());
 app.use(express.json())
 app.use(Router)
 app.use(express.static(urlPublic))
