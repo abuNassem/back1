@@ -1,0 +1,32 @@
+[
+    {
+      "id": 1,
+      "title": "men",
+      "prefix": "men",
+      "img": "/photo-1620833072816-e879094a1475.avif"
+    },
+    {
+      "id": 2,
+      "title": "women",
+      "prefix": "women",
+      "img": "/premium_photo-1682965455471-07caac97f1ba.avif"
+    },
+    {
+      "id": 3,
+      "title": "kids",
+      "prefix": "kids",
+      "img": "/photo-1654659332294-3dd5664e0253.avif"
+    },
+    {
+      "id": 4,
+      "title": "baby",
+      "prefix": "baby",
+      "img": "/photo-1589347528565-4ad0dcc12958.avif"
+    },
+    {
+      "id": 5,
+      "title": "sport",
+      "prefix": "sport",
+      "img": "/photo-1605235186531-bbd852b09e69.avif"
+    }
+  ]
