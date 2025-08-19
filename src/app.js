@@ -7,7 +7,12 @@ require('../db/db')
 const Router = require('../router/router')
 
 const app=express()
-app.use(cors());
+app.use(cors({
+  origin: 'http://localhost:5173', // هنا تضيف رابط فرونت اندك أثناء التطوير
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true
+}));
+
 app.use(express.json())
 app.use(Router)
 app.use(express.static(urlPublic))
