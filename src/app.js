@@ -7,12 +7,14 @@ require('../db/db')
 const Router = require('../router/router')
 
 const app=express()
-app.use(cors())
+app.use(cors({
+  origin: ["https://your-frontend.onrender.com"]
+}));
 app.use(express.json())
 app.use(Router)
 app.use(express.static(urlPublic))
 
-const port=process.env.PORT|3000
+const port=process.env.PORT||3000
 app.listen(port,()=>{
     console.log(`http://localhost:${port}/productapi`)
         console.log(`http://localhost:${port}/category`)
