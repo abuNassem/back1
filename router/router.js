@@ -274,7 +274,7 @@ Router.delete('/favorit/:email/:id', async (req, res) => {
   try {
     const user = await schemaUsers.findOneAndUpdate(
       { email: email },
-      { $pull: { favorit: { id: id } } }, // خليه string لو في الداتا string
+      { $pull: { favorit: { id: Number(id) } } }, // خليه string لو في الداتا string
       { new: true }
     );
 
